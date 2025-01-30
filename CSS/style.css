@@ -2,6 +2,45 @@
     
 }
 /*@import "tailwindcss";*/
+.hero {
+    
+    height: 100vh;
+    background-image: url('/resources/images/un\ pequeño\ faro\ en\ el\ centro\ de\ una\ isla\ con\ bordes\ difuminados\ de\ niebla\ orcura\ para\ un\ videojuego\ de\ terror.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 80%;
+    text-align: center;
+}
 body {
-    background-image: ;
+    position:absolute;
+    width: 100%;
+    
+    background-image: url('/resources/images/elpoder-del-oceano-durante-una-tormenta-lz32cbwjtyjd2zcz.webp');
+    background-size: cover;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+.main-grid {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    grid-gap: 30px;
+    
+}
+.grid-content {
+    width: 100%;
+    
+    border-radius: 20px;
+    box-shadow: 0, 0, 20px white;
+    
 }
