@@ -1,5 +1,6 @@
 :root {
-    
+    --main-color: black;
+    --secondary-color: white;
 }
 @font-face {
     font-family: "aaa";
@@ -32,7 +33,41 @@ body {
     
 
 }
+.nav {
+    border-top: solid;
+    border-bottom: solid;
+    border-color: var(--secondary-color);
+
+    width: 100%;
+    background-color: var(--main-color);
+    
+    
+}
+ul {
+    display: flex;
+    width: 50%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+
+}
+li {
+    width: 100%;
+  }
+  
+  li a {
+    
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 .main-grid {
+    
     margin: auto;
     width: 70%;
     display: grid;
@@ -43,8 +78,9 @@ body {
 }
 .grid-content {
     width: 100%;
-    
-    border-radius: 20px;
-    box-shadow: 0, 0, 20px white;
-    
+    border: solid;
+    border-radius: 5px;
+    border-color: var(--secondary-color);
+    box-shadow: 0, 0, 20px var(--secondary-color);
+    background-color: var(--main-color);
 }
