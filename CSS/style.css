@@ -1,6 +1,10 @@
 :root {
     
 }
+@font-face {
+    font-family: "aaa";
+    src: url('/resources/fonts/zero_output/zerooutputDEMO.otf');
+}
 /*@import "tailwindcss";*/
 .hero {
     
@@ -19,7 +23,7 @@
 body {
     position:absolute;
     width: 100%;
-    
+    font-family: "aaa";
     background-image: url('/resources/images/elpoder-del-oceano-durante-una-tormenta-lz32cbwjtyjd2zcz.webp');
     background-size: cover;
     background-position:fixed;
