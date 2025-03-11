@@ -3,13 +3,13 @@
 }
 @font-face {
     font-family:"aaa";
-    src: url('/resources/fonts/zero_output/zerooutputDEMO.otf');
+    src: url('resources/fonts/zero_output/zerooutputDEMO.otf');
 }
 /*@import "tailwindcss";*/
 .hero {
     
     height: 100vh;
-    background-image: url('/resources/images/un\ pequeño\ faro\ en\ el\ centro\ de\ una\ isla\ con\ bordes\ difuminados\ de\ niebla\ orcura\ para\ un\ videojuego\ de\ terror.png');
+    background-image: url('resources/images/un\ pequeño\ faro\ en\ el\ centro\ de\ una\ isla\ con\ bordes\ difuminados\ de\ niebla\ orcura\ para\ un\ videojuego\ de\ terror.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
     position:absolute;
     width: 100%;
     font-family: "aaa";
-    background-image: url('/resources/images/elpoder-del-oceano-durante-una-tormenta-lz32cbwjtyjd2zcz.webp');
+    background-image: url('resources/images/elpoder-del-oceano-durante-una-tormenta-lz32cbwjtyjd2zcz.webp');
     background-size: cover;
     background-position:fixed;
     background-repeat: no-repeat;
