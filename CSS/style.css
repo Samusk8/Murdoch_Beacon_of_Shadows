@@ -1,16 +1,19 @@
+
 :root {
     --main-color: black;
     --secondary-color: white;
+    --hover-color: red;
 }
 @font-face {
     font-family: "aaa";
     src: url('/resources/fonts/zero_output/zerooutputDEMO.otf');
+    
 }
 /*@import "tailwindcss";*/
 .hero {
-    
+/*    font-size:2em;*/
     height: 100vh;
-    background-image: url('/resources/images/un\ pequeño\ faro\ en\ el\ centro\ de\ una\ isla\ con\ bordes\ difuminados\ de\ niebla\ orcura\ para\ un\ videojuego\ de\ terror.png');
+    background-image: url('/resources/images/background_hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,10 +25,11 @@
     text-align: center;
 }
 body {
+    font-size: 2em;
     position:absolute;
     width: 100%;
     font-family: "aaa";
-    background-image: url('/resources/images/elpoder-del-oceano-durante-una-tormenta-lz32cbwjtyjd2zcz.webp');
+    background-image: url('/resources/images/background_ocean.webp');
     background-size: cover;
     background-position:fixed;
     background-repeat: no-repeat;
@@ -37,25 +41,30 @@ body {
     border-top: solid;
     border-bottom: solid;
     border-color: var(--secondary-color);
-
     width: 100%;
+
     background-color: var(--main-color);
     
     
 }
+nav {
+    height: 7vh;
+}
 ul {
     display: flex;
-    width: 50%;
+    width: 100%;
     list-style-type: none;
     margin: auto;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-
+    height: 100%;
+justify-content: center;
 
 }
-li {
+.link {
     width: 100%;
+    transition: background-color, color 0.5s ease;
+    
   }
   
   li a {
@@ -65,6 +74,9 @@ li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+  .link:hover {
+    background-color: #1b1b1b86;
   }
 .main-grid {
     
@@ -83,4 +95,14 @@ li {
     border-color: var(--secondary-color);
     box-shadow: 0, 0, 20px var(--secondary-color);
     background-color: var(--main-color);
+    transition: border-color 0.5s ease;
+}
+    .grid-content:hover,.link:hover {
+        color:var(--hover-color);
+        border-color: var(--hover-color);
+    }
+
+.index {
+    margin:auto
+    ;
 }
