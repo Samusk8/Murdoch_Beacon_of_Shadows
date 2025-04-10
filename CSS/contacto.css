@@ -1,0 +1,112 @@
+
+.nav {
+    border-top: solid;
+    border-bottom: solid;
+    border-color: var(--secondary-color);
+    width: 100%;
+
+    background-color: var(--main-color);
+
+
+}
+nav {
+    height: 7vh;
+}
+ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    justify-content: center;
+
+}
+.link {
+    width: 100%;
+    transition: background-color, color 0.5s ease;
+
+  }
+
+  li a {
+
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .link:hover {
+    background-color: #1b1b1b25;
+  }
+
+
+
+
+
+
+
+input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 700px red;
+
+ }
+    input:focus, textarea:focus{
+        background-color: #201717;
+        border-color: red;
+        outline: none;
+    }
+label.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px; 
+}
+ form {
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+}
+
+body{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    font-family: "aaa";
+    background-image: url('/resources/images/DALL·E\ 2025-03-13\ 11.58.18\ -\ A\ dark\,\ eerie\ image\ where\ only\ the\ sharp\,\ menacing\ teeth\ of\ a\ ferocious\ jaw\ are\ visible\,\ as\ if\ the\ viewer\ is\ being\ swallowed\ into\ its\ maw.\ The\ backgro.webp');
+    background-size: cover;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+
+}
+
+textarea {
+    box-sizing:content-box;
+    width: 400px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; 
+    box-shadow: 0 2px 500px red;
+}
+
+#enviar:hover {
+    background-color: #1b1b1b25;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);;
+    transition: background-color, color 0.5s ease;
+    
+}
