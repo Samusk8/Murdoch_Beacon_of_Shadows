@@ -1,0 +1,12 @@
+:root {
+    --main-color: black;
+    --secondary-color: white;
+    --hover-color: red;
+    --principal-font-size: 2em;
+}
+/*@font-face {
+
+    font-family:"aaa";
+    src: url('../resources/fonts/zero_output/zerooutputDEMO.otf');
+
+}*/
