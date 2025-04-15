@@ -55,12 +55,36 @@ body {
  color: rgb(219, 55, 55);
 }
 
+.divizquierdo h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 12em;
+    color: rgb(219, 55, 55);
+   }
+
+.divizquierdo ul {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    color: rgb(219, 55, 55);
+    text-align: left;
+  
+}
+.divizquierdo li {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+
+  
+}
 .divderecho h3 {
     text-align: center;
     margin-top: 50px;
     font-size: 8em;
     color: rgb(219, 55, 55);
    }
+
 
 .botondescarga {
     width: 50%;
