@@ -37,8 +37,7 @@ body {
 .divizquierdo h2 {
     text-align: center;
     margin-top: 100px;
-    font-size: 12em;
-    color: rgb(219, 55, 55);
+    color: var(--hover-color);
 }
 .divderecho {
     width: 50%;
@@ -52,21 +51,21 @@ body {
  text-align: center;
  margin-top: 100px;
  font-size: 12em;
- color: rgb(219, 55, 55);
+ color: var(--hover-color);
 }
 
 .divizquierdo h2 {
     text-align: center;
     margin-top: 100px;
     font-size: 12em;
-    color: rgb(219, 55, 55);
+    color: var(--hover-color);
    }
 
 .divizquierdo ul {
     text-align: center;
     margin-top: 10px;
     font-size: 2em;
-    color: rgb(219, 55, 55);
+    color: var(--hover-color);
     text-align: left;
   
 }
@@ -74,7 +73,7 @@ body {
     text-align: center;
     margin-top: 10px;
     font-size: 2em;
-    color: rgb(255, 255, 255);
+    color: var(secondary-color);
 
   
 }
@@ -82,7 +81,7 @@ body {
     text-align: center;
     margin-top: 50px;
     font-size: 8em;
-    color: rgb(219, 55, 55);
+    color: var(--hover-color);
    }
 
 

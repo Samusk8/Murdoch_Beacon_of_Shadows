@@ -1,10 +1,5 @@
 
-:root {
-    --main-color: black;
-    --secondary-color: white;
-    --hover-color: red;
-    --principal-font-size: 2em;
-}
+
 @font-face {
 
     font-family:"aaa";
@@ -52,68 +47,7 @@ body {
     
 
 }
-h1 {
-  font-size: 10em;
-}
-h2 {
-  font-size: 7em;
-}
-h3 {
-  font-size: 5em;
-}
-h4 {
-  font-size: 4em;
-}
-h5 {
-  font-size: 3em;
-}
-h6, p{
-  font-size: 2em;
-}
-a{
-  font-size: 2em;
-}
-.nav {
-    border-top: solid;
-    border-bottom: solid;
-    border-color: var(--secondary-color);
-    width: 100%;
 
-    background-color: var(--main-color);
-    
-    
-}
-nav {
-    height: 7vh;
-}
-ul {
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-    justify-content: center;
-
-}
-.link {
-    width: 100%;
-    transition: background-color, color 0.5s ease;
-    
-  }
-  
-  li a {
-    
-    display: block;
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .link:hover {
-    background-color: #1b1b1b25;
-  }
 .main-grid {
     
     margin: auto;
@@ -142,6 +76,7 @@ ul {
 .index {
     text-align: center;
     align-self: self-end;
+    color: var(--secondary-color);
 }
 .head-line {
     background-color: #000;
