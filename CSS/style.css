@@ -49,8 +49,8 @@ body {
 }
 
 .main-grid {
-    
-    margin: auto;
+  margin: auto;
+  margin-top: 5%;
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
