@@ -45,6 +45,16 @@ textarea {
 
 }
 
+/* Header */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+  }
+  
+
 .nav {
     border-top: solid;
     border-bottom: solid;
@@ -52,7 +62,6 @@ textarea {
     width: 100%;
 
     background-color: var(--main-color);
-
 
 }
 
@@ -89,4 +98,104 @@ li a {
 
 .link:hover {
     background-color: #1b1b1b25;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--main-color); 
+    color: var(--secondary-color); 
+    padding: 2.5rem 1.5rem; 
+}
+
+.footer-container {
+  max-width: 80rem; 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+  }
+}
+
+/* --- Títulos y subtítulos --- */
+.footer-title {
+  font-weight: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-subtitle {
+  font-size: 5em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Texto y listas --- */
+.footer-text, .footer-list {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-list {
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* --- Enlace de contacto --- */
+.footer-link {
+  color: #63b3ed; /* azul claro */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Redes sociales --- */
+.footer-descarga {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+      text-align: left;
+    }
+
+    .footer-descarga {
+      justify-content: flex-start;
+    }
+}
+
+.footer-descarga-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-descarga-link:hover {
+  color: #ffffff;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid grey; 
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: grey; 
 }
