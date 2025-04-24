@@ -11,6 +11,9 @@
     src: url('../resources/fonts/zero_output/zerooutputDEMO.otf');
 
 }
+body {
+    font-family: 'aaa';
+}
 
 h1 {
     font-size: 10em;
@@ -86,6 +89,20 @@ nav {
     transition: background-color, color 0.5s ease;
 
 }
+.link-selected {
+    width: 100%;
+    transition: background-color, color 0.5s ease, border-radius, 0.5s ease ;
+    background-color: rgba(255, 0, 0, 0.322) ;
+    
+}
+.link-selected:hover {
+    border-radius: 50px;
+    color: rgb(189, 176, 176);
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.322) ;
+    border-radius: 50px;
+}
+
 
 li a {
 
@@ -97,6 +114,7 @@ li a {
 }
 
 .link:hover {
+    color: var(--hover-color);
     background-color: #1b1b1b25;
 }
 
