@@ -64,7 +64,7 @@ body {
     border: solid;
     border-radius: 5px;
     border-color: var(--secondary-color);
-    box-shadow: 0, 0, 20px var(--secondary-color);
+    box-shadow: 0, 0, 20px var(--primary-color);
     background-color: var(--main-color);
     transition: border-color 0.5s ease;
 }
@@ -89,7 +89,7 @@ body {
 
 .button-container-2 {
     position: relative;
-    width: 10%;
+    width: 20%;
     height: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -183,5 +183,42 @@ body {
       -webkit-mask-position: 0 0;
       mask-position: 0 0;
     }
+  }
+
+
+  .historia {
+    width: 100%;
+    color: var(--secondary-color);
+    margin-top: 5%;
+
+  }
+
+  .historia-content {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  .historia-content:hover {
+    background-color: rgba(47, 79, 79, 0.377);
+    border-radius: 500px;
+    box-shadow: 0 2px 400px darkslategrey;
+
+  }
+
+  .historia-content-img{
+    width: 50%;
+    margin: auto;
+  }
+
+  .historia-content img {
+    border: 3px white outset;
+    
+
+  }
+
+  .historia-content-text {
+    width: 50%;
+    margin: 5%;
   }
 
