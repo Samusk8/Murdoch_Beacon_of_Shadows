@@ -4,9 +4,11 @@ import { Post } from "./Post.js";
 import { storageClassificacio } from "./storageClassificacio.js";
 import { storageComentaris } from "./storageComentaris.js";
 import { storagePost } from "./storagePost.js";
+
 let gestorComentaris = new storageComentaris();
 let gestorPuntuacions = new storageClassificacio();
 let gestorPosts = new storagePost();
+
 
 mostrarComentaris();
 mostrarPuntuacions();
@@ -51,6 +53,51 @@ async function mostrarComentaris() {
 function limpiarMostrarComentaris() {
     document.getElementById("comentario").innerHTML = '';
 }
+
+
+document.getElementById("enviarComentari").addEventListener("click", async () => {
+    const nom = document.getElementById("nomUsuari").value;
+    const text = document.getElementById("textComentari").value;
+
+    if (nom === "" || text === "") {
+        alert("Has d'omplir tots els camps.");
+        return;
+    }
+
+    const token = "GHCki2tUqpMxPYBI6KnHEZD98ffEEeZMcts6J1QAh7FLDh3H7MpLcX4YQ7km";
+
+    try {
+        const resposta = await fetch("https://phpstack-1076337-5399863.cloudwaysapps.com/api/comments/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                name: nom,
+                content: text,
+               
+            })
+        });
+
+        if (!resposta.ok) throw new Error("Error en enviar el comentari");
+
+        alert("Comentari enviat correctament!");
+
+        // Afegim el comentari localment i actualitzem la vista
+        const nouComentari = new Comentari(nom, text);
+        gestorComentaris.afegirComentari(nouComentari);
+        mostrarComentaris();
+
+        // Neteja del formulari
+        document.getElementById("nomUsuari").value = "";
+        document.getElementById("textComentari").value = "";
+
+    } catch (err) {
+        console.error(err);
+        alert("Error en enviar el comentari.");
+    }
+});
 
 
 

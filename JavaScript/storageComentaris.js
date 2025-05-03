@@ -15,4 +15,6 @@ export class storageComentaris {
         this.comentaris.push(newComentari);
 
     }
+
+    
 }
