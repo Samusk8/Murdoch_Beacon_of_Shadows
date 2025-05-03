@@ -58,38 +58,38 @@ function limpiarMostrarComentaris() {
 document.getElementById("enviarComentari").addEventListener("click", async () => {
     const nom = document.getElementById("nomUsuari").value;
     const text = document.getElementById("textComentari").value;
-
     if (nom === "" || text === "") {
         alert("Has d'omplir tots els camps.");
         return;
     }
 
-    const token = "GHCki2tUqpMxPYBI6KnHEZD98ffEEeZMcts6J1QAh7FLDh3H7MpLcX4YQ7km";
+    const dadesComentari = {
+        api_token: 'GHCki2tUqpMxPYBI6KnHEZD98ffEEeZMcts6J1QAh7FLDh3H7MpLcX4YQ7km',
+        name: nom,
+        content: text
+        
+    };
 
     try {
-        const resposta = await fetch("https://phpstack-1076337-5399863.cloudwaysapps.com/api/comments/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS", {
+        const resposta = await fetch("https://phpstack-1076337-5399863.cloudwaysapps.com/api/comments/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
+
             },
-            body: JSON.stringify({
-                name: nom,
-                content: text,
-               
-            })
+            body: JSON.stringify(dadesComentari)
         });
 
         if (!resposta.ok) throw new Error("Error en enviar el comentari");
 
         alert("Comentari enviat correctament!");
 
-        // Afegim el comentari localment i actualitzem la vista
-        const nouComentari = new Comentari(nom, text);
-        gestorComentaris.afegirComentari(nouComentari);
-        mostrarComentaris();
 
-        // Neteja del formulari
+        const newComentari = new Comentari(nom, text);
+        gestorComentaris.afegirComentari(newComentari);
+        //mostrarComentaris();
+
+       
         document.getElementById("nomUsuari").value = "";
         document.getElementById("textComentari").value = "";
 
@@ -98,6 +98,7 @@ document.getElementById("enviarComentari").addEventListener("click", async () =>
         alert("Error en enviar el comentari.");
     }
 });
+
 
 
 
