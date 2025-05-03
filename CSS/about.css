@@ -1,0 +1,60 @@
+body {
+    background-image: url('../resources/images/background_ocean.webp');
+
+    background-size: cover;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.participantes{
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+.carta{
+    background-color:black;
+    color: white;
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid 3px;
+    transition: all 0.5s ease;
+}
+.foto {
+    width: 80%;
+    margin: auto;
+
+}
+
+.foto >img {
+    border-radius: 200px;
+    margin-top: 10%;
+}
+
+.carta:hover {
+    border: solid 3px red;
+    width: 40%;
+}
+
+.texto {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .participantes {
+        flex-direction: column;
+    }
+    .carta {
+        width: 90%;
+    }
+    .carta:hover {
+        width: 100%;
+    }
+    .texto {
+        display: flex;
+        justify-content: space-between;
+    }
+}
