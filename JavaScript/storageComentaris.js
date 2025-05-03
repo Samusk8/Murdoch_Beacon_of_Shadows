@@ -1,5 +1,3 @@
-import { Comentari } from "./Comentaris.js";
-
 export class storageComentaris {
 
     comentaris;
