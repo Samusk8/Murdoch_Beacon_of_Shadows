@@ -1,21 +1,50 @@
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../resources/images/stroma-isla.png');
+    background-size: cover;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .main-grid {
     margin: auto;
     margin-top: 5%;
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(80px, auto);
-    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
 
+}
+
+.grid-content:hover {
+    border: 3px solid var(--hover-color);
 }
 
 .grid-content {
     width: 100%;
-
     border: solid;
     border-radius: 5px;
     border-color: var(--secondary-color);
-    box-shadow: 0, 0, 20px var(--primary-color);
+    box-shadow: 0, 0, 200px var(--hover-color);
     background-color: var(--main-color);
     transition: border-color 0.5s ease;
+}
+
+.posts {
+    width: 70%;
+    margin: auto;
+}
+
+#post {
+    margin-bottom: 10%;
+    height: 20em;
+    line-height: 1.5em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid white;
+    border-radius:20px ;
+    position: static;
 }
