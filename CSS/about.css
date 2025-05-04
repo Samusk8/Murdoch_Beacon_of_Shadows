@@ -32,6 +32,17 @@ body {
     border-radius: 200px;
     margin-top: 10%;
 }
+.carta {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+  
+  .carta.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 
 .carta:hover {
     border: solid 3px red;
@@ -58,3 +69,4 @@ body {
         justify-content: space-between;
     }
 }
+

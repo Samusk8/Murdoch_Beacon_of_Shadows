@@ -48,6 +48,15 @@ textarea {
     font-size: 1.5em;
 
 }
+#uno, #dos, #tres, #cuatro{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+#uno.visible, #dos.visible, #tres.visible, #cuatro.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
 /*hamburguesa*/
 .h-nav {
   display: none;
