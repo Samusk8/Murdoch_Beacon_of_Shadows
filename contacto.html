@@ -15,6 +15,7 @@
     <meta property="og:title" content="Contacto">
     <meta property="og:image" content="imatge.png">
     <meta property="og:url" content="https://www.murdoch.com">
+  
 
 
     <title>Contacto</title>
@@ -118,9 +119,9 @@
                 <label class="required" for="asunto">Asunto:</label>
                 <input type="text" id="asunto" name="asunto">
                 <label class="required" for="nombre">Comentarios:</label>
-                <textarea placeholder="Escribe un comentario aquí..."></textarea>
+                <textarea placeholder="Escribe un comentario aquí..." id="mensaje"></textarea>
              
-                <input type="submit" id="enviar" value="Enviar">
+                <input type="submit" id="enviarFormulario" value="Enviar">
              </form>
         </section>
     </main>
@@ -163,11 +164,10 @@
           ©  Murdoch Game. Todos los derechos reservados
         </div>
       </footer>
-      
-      <script src="JavaScript/ScrollButton.js"></script>
-      <script src="JavaScript/index.js"></script>
-      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
+      <script src="JavaScript/ScrollButton.js"></script>
+      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+      <script type="module" src="JavaScript/index.js"></script>
 </body>
 
 </html>
