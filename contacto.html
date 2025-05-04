@@ -21,6 +21,24 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="CSS/contacto.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          setTimeout(() => {
+            document.getElementById("uno").classList.add("visible");
+          }, 500);
+    
+          setTimeout(() => {
+            document.getElementById("dos").classList.add("visible");
+          }, 1000);
+    
+
+
+        });
+      
+        
+      
+        </script>
 </head>
 
 <body>
@@ -110,7 +128,7 @@
         </section>
     </header>
     <main>
-        <section>
+        <section id="uno">
             <form>
                 <label class="required" for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre">
@@ -126,7 +144,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="dos">
         <div class="footer-container">
           
           

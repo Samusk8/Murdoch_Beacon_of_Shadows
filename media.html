@@ -20,6 +20,23 @@
     <title>Media</title>
     <link rel="stylesheet" href="CSS/media.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          setTimeout(() => {
+            document.getElementById("uno").classList.add("visible");
+          }, 500);
+    
+          setTimeout(() => {
+            document.getElementById("dos").classList.add("visible");
+          }, 1000);
+    
+
+        });
+      
+        
+      
+        </script>
 </head>
 
 <body>
@@ -108,7 +125,7 @@
             </div>
         </section>
     </header>
-    <section>
+    <section id="uno">
         <div class="posts">
             <h2>Mantenlo Prendido</h2>
             <div id="post">
@@ -116,7 +133,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="dos">
         <div class="main-grid">
             <div class="grid-content"><img src="resources/images/background_hero.png" width="100%" alt="imagen"></div>
             <div class="grid-content"><img src="resources/images/dientes.webp" width="100%" alt="imagen"></div>
