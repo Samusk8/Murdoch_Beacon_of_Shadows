@@ -20,12 +20,36 @@
     <title>Murdoch</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          setTimeout(() => {
+            document.getElementById("uno").classList.add("visible");
+          }, 500);
+    
+          setTimeout(() => {
+            document.getElementById("dos").classList.add("visible");
+          }, 2000);
+    
+    
+          setTimeout(() => {
+            document.getElementById("tres").classList.add("visible");
+          }, 2500);
+    
+          setTimeout(() => {
+            document.getElementById("cuatro").classList.add("visible");
+          }, 3000);
+        });
+      
+        
+      
+        </script>
 </head>
 
 <body>
     <header>
         <div class="hero">
-            <div class="hero-text">
+            <div class="hero-text" id="uno">
 
                 <h1>MURDOCH</h1>
                 <h2>BEACON OF SHADOWS</h2>
@@ -87,7 +111,7 @@
           
         <section class="" id="header"> <!-- Navegacion -->
             
-            <div class="nav">
+            <div class="nav" id="dos">
                 <nav>
                     <ul class="ulnav">
                         <li>
@@ -126,64 +150,48 @@
         </section>
 
         <section> <!-- Cuadricula principal -->
-            <div class="main-grid">
+            <div class="main-grid" id="tres">
 
                 <div class="grid-content">
-                    <h6 class="index">
                         <a class="link" href="index.html#historia" >
-                            HISTORIA
+
+                            <img width="100%" src="resources/images/home.png" alt="Imagen">
                         </a>
-                    </h6>
-                    <img src="../resources/images/icono_faro.webp" alt="Imagen">
                 </div>
                 <div class="grid-content">
-                    <h6 class="index">
                         <a class="link" href="media.html">
-                            MEDIA
+                            
+                            <img width="100%" src="resources/images/media.png" alt="Imagen">
                         </a>
-                    </h6>
-                    <img src="../resources/images/icono_faro.webp" alt="Imagen">
                 </div>
                 <div class="grid-content">
-                    <h6 class="index">
                         <a class="link" href="descargas.html">
-                            DESCARGA
+                            <img width="100%" src="resources/images/descarga.png" alt="Imagen">
                         </a>
-                    </h6>
-                    <img src="../resources/images/icono_faro.webp" alt="Imagen">
                 </div>
 
 
 
                 <div class="grid-content">
-                    <h6 class="index">
                         <a class="link" href="comunidad.html">
-                            COMUNIDAD
+                            <img width="100%" src="resources/images/comunidad.png" alt="Imagen">
                         </a>
-                    </h6>
-                    <img src="../resources/images/icono_faro.webp" alt="Imagen">
                 </div>
                 <div class="grid-content">
-                    <h6 class="index">
                         <a class="link" href="contacto.html">
-                            CONTACTO
+                            <img width="100%" src="resources/images/contacto.png" alt="Imagen">
                         </a>
-                    </h6>
-                    <img src="../resources/images/icono_faro.webp" alt="Imagen">
                 </div>
                 <div class="grid-content">
-                    <h6 class="index">
                         <a class="link" href="about.html">
-                            ABOUT US
+                            <img width="100%" src="resources/images/about.png" alt="Imagen">
                         </a>
-                    </h6>
-                    <img src="../resources/images/icono_faro.webp" alt="Imagen">
                 </div>
             </div>
         </section>
         
         <section>
-            <div class="head-line" id="historia">
+            <div class="head-line" id="cuatro" >
                 <h2>No caigas en la oscuridad</h2>
                 <p>Únete a la aventura en Murdoch, una isla repleta de misterios</p>
                 <div class="trailer">
@@ -195,7 +203,7 @@
         </section>
 
         <section>
-            <div class="historia">
+            <div class="historia" id="historia">
                 
                 <div class="historia-content">
                     
