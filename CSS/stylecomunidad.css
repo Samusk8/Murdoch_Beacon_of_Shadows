@@ -2,9 +2,11 @@
 
 body {
     width: 100%;
+    top: 0px;
 }
 .principal {
-    height: 100vh;
+    
+    min-height: 100vh;
     width: 100%;
     display: flex;
     background-image: url('../resources/images/faro.jpeg');
@@ -83,13 +85,14 @@ form {
     height: 30em;
     line-height: 1.5em;
     overflow-x: hidden;
-    overflow-y: scroll;
-    width: 100%;
+    overflow-y: auto;
+    width: 90%;
     border: 1px solid white;
     border-radius:20px ;
+    position: static;
 }
 
-.comentario {
+.comentario, .user {
     width: 80%;
     background-color: rgba(82, 97, 92, 0.808);
     margin: 3% auto;
@@ -100,4 +103,33 @@ form {
 
 .nom3 h5 {
     color: var(--hover-color);
+}
+
+#rankingBox {
+    height: 46em;
+    line-height: 1.5em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid white;
+    border-radius:20px ;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
+    .divizquierdo, .divderecho {
+        width: 100%;
+    }
+    .comentarios{
+        margin-top: 10%;
+
+    }
+    #comentario, #rankingBox {
+        width: 80%;
+        margin: auto;
+        height: 30em;
+
+    }
 }

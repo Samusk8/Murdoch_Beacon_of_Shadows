@@ -6,9 +6,9 @@ export class Classificacio {
 
     mostrarClassificacio() {
         return `
-            <li class="user">
+            <h5 class="user">
                 ${this.name} - ${this.puntuacion}
-            </li>
+            </h5>
         `;
     }
 }

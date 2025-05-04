@@ -13,6 +13,7 @@
 }
 body {
     font-family: 'aaa';
+    
 }
 
 h1 {
@@ -121,9 +122,7 @@ textarea {
 
 }
 
-nav {
-    height: 8vh;
-}
+
 
 .ulnav {
     display: flex;
