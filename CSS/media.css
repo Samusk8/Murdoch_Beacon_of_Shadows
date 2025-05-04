@@ -10,6 +10,7 @@ body{
 .main-grid {
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 5%;
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -60,4 +61,13 @@ body{
 }
 .nom5 h5 {
     color: var(--hover-color);
+}
+
+@media (max-width: 1020px) {
+    .main-grid {
+      grid-template-columns:  1fr;
+    }
+    .posts>h2 {
+        line-height: 1em;
+    }
 }
