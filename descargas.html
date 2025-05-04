@@ -19,6 +19,30 @@
     <title>Descarga Murdoch</title>
     <link rel="stylesheet" href="CSS/styledescargas.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <script>
+        
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        document.getElementById("uno").classList.add("visible");
+      }, 500);
+
+      setTimeout(() => {
+        document.getElementById("dos").classList.add("visible");
+      }, 1000);
+
+
+      setTimeout(() => {
+        document.getElementById("tres").classList.add("visible");
+      }, 1500);
+
+      setTimeout(() => {
+        document.getElementById("cuatro").classList.add("visible");
+      }, 2000);
+    });
+  
+    
+  
+    </script>
 </head>
 
 <body>
@@ -108,12 +132,12 @@
         </section>
     </header>
     <div class="descarga">
-        <div class="descarga-img">
+        <div class="descarga-img" id="uno">
             <a href="https://avilcavill.itch.io/murdoch-beacon-of-shadows"  target="_blank">
                 <img src="resources/images/itchioimg.jpg" alt="Imagen" width="70%" >
             </a>
         </div>
-        <div class="descarga-boton">
+        <div class="descarga-boton" id="dos">
             <h3>Murdoch</h3>
             <p>@@@@@</p>
             <p>ya disponible !!!</p>
@@ -123,7 +147,7 @@
         </div>
     </div>
     <div class="descarga2">
-        <div class="requisitos">
+        <div class="requisitos" id="tres">
             <h3>Requisitos del Sistema</h3> <br>
             <ul class="requisitosUl">
                 <li>Sistema operativo: Windows 7/8/10</li>
@@ -133,7 +157,7 @@
                 <li>Almacenamiento: 2 GB de espacio disponible</li>
             </ul>
         </div>
-        <div class="trailer">
+        <div class="trailer" id="cuatro">
             <video src="resources/images/trailer.mp4"   controls muted autoplay loop playsinline width="100%" >
                 <!-- Trailer -->
             </video>

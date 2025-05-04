@@ -18,6 +18,28 @@
     <title>Comunidad</title>
     <link rel="stylesheet" href="CSS/stylecomunidad.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          setTimeout(() => {
+            document.getElementById("uno").classList.add("visible");
+          }, 500);
+    
+          setTimeout(() => {
+            document.getElementById("dos").classList.add("visible");
+          }, 1000);
+    
+    
+          setTimeout(() => {
+            document.getElementById("tres").classList.add("visible");
+          }, 2000);
+    
+
+        });
+      
+        
+      
+        </script>
 </head>
 
 <body>
@@ -108,20 +130,20 @@
     </header>
 
     <div class="principal">
-        <div class="divizquierdo">
+        <div class="divizquierdo" id="uno">
             <h2>COMENTARIOS</h2>
             <div id="formulari-comentari">
                 <input type="text" id="nomUsuari" placeholder="El teu nom" required>
                 <textarea id="textComentari" placeholder="Escriu el teu comentari" required></textarea>
                 <button id="enviarComentari">Enviar</button>
             </div>
-            <div class="comentarios">
+            <div class="comentarios" id="dos">
                 <div id="comentario">
 
                 </div>
             </div>
         </div>
-        <div class="divderecho">
+        <div class="divderecho" id="tres">
             <h2>Ranking</h2>
             <div class="ranking">
                 <div id="rankingBox">
