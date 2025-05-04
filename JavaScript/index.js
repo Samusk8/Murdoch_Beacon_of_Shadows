@@ -27,7 +27,7 @@ if (btnEnviarComentari) {
 
 mostrarComentaris();
 mostrarPuntuacions();
-//mostrarPosts();
+mostrarPosts();
 
 async function descargarComentaris() {
     try {

@@ -25,7 +25,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cartas = document.querySelectorAll(".carta");
     cartas.forEach((carta, i) => {
-      // i = 0,1,2…; el primer delay será 500 ms, luego se suma 300 ms por cada carta
       setTimeout(() => {
         carta.classList.add("visible");
       }, 500 + i * 300);
@@ -138,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="texto">
                     <h5>Alejandro</h5>
-                    <p>desarrollo web</p>
+                    <p>desarrollo del videojuego</p>
                 </div>
             </div>
             <div class="carta" id="carta">

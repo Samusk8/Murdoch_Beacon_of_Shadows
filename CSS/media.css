@@ -35,6 +35,7 @@ body{
 .posts {
     width: 70%;
     margin: auto;
+    color: red;
 }
 
 #post {
@@ -47,4 +48,16 @@ body{
     border: 1px solid white;
     border-radius:20px ;
     position: static;
+}
+
+.nom5 {
+    width: 80%;
+    background-color: rgba(82, 97, 92, 0.808);
+    margin: 3% auto;
+    color: rgb(253, 253, 253);
+    border-radius: 20px;
+    padding: 10px;
+}
+.nom5 h5 {
+    color: var(--hover-color);
 }

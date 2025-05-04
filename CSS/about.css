@@ -52,6 +52,7 @@ body {
 .texto {
     width: 80%;
     margin: auto;
+    line-height: 2em;
 }
 
 @media (max-width: 768px) {
@@ -68,5 +69,12 @@ body {
         display: flex;
         justify-content: space-between;
     }
+
+}
+@media (max-width: 500px) {
+    .texto >p {
+        display: none;
+    }
+
 }
 

@@ -8,7 +8,7 @@ export class Post {
         return `
             <div class="post">
                 <div class="nom5">
-                    <p>${this.title}</p>
+                    <h5>${this.title}</h5>
                     <p>${this.content}</p>
                 </div>
             </div>
