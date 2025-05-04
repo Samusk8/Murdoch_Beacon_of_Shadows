@@ -9,7 +9,7 @@ export class Comentari {
         return `
             <div class="comentario">
                 <div class="nom3">
-                    <p>Usuari: ${this.name}</p>
+                    <h5>${this.name}</h5>
                     <p>${this.content}</p>
                 </div>
             </div>
