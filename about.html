@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,21 @@
     <title>About us</title>
     <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cartas = document.querySelectorAll(".carta");
+    cartas.forEach((carta, i) => {
+      // i = 0,1,2…; el primer delay será 500 ms, luego se suma 300 ms por cada carta
+      setTimeout(() => {
+        carta.classList.add("visible");
+      }, 500 + i * 300);
+    });
+  });
+
+    </script>
 </head>
+
 <body>
     <header>
         <section id="h-header">
@@ -31,7 +46,7 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </button>
-                    
+
                     <ul class="h-ulnav">
                         <li>
                             <a class="h-link" href="index.html">
@@ -108,7 +123,7 @@
     </header>
     <main>
         <section class="participantes">
-            <div class="carta">
+            <div class="carta" id="carta">
                 <div class="foto">
                     <img src="resources/images/Samuel.jpg" alt="perfil">
                 </div>
@@ -117,7 +132,7 @@
                     <p>desarrollo Web</p>
                 </div>
             </div>
-            <div class="carta">
+            <div class="carta" id="carta">
                 <div class="foto">
                     <img src="resources/images/Alejandro.jpg" alt="perfil">
                 </div>
@@ -126,7 +141,7 @@
                     <p>desarrollo web</p>
                 </div>
             </div>
-            <div class="carta">
+            <div class="carta" id="carta">
                 <div class="foto">
                     <img src="resources/images/Daniel.png" alt="perfil">
                 </div>
@@ -137,23 +152,24 @@
             </div>
         </section>
     </main>
-    
-    
-    
-    
+
+
+
+
     <footer class="footer">
         <div class="footer-container">
-            
-            
-            <div >
+
+
+            <div>
                 <h3 class="footer-title">Murdoch</h3>
                 <p class="footer-text">
-                    Un videojuego de terror y supervivencia donde mantener encendido el faro es la unica esperanza. Pero cuidado... hay algo acechando entre las sombras.
+                    Un videojuego de terror y supervivencia donde mantener encendido el faro es la unica esperanza. Pero
+                    cuidado... hay algo acechando entre las sombras.
                 </p>
             </div>
-            
-            
-            <div >
+
+
+            <div>
                 <h3 class="footer-title">Equipo</h3>
                 <ul class="footer-list">
                     <li>Alejandro Avila – Desarrollo del videojuego</li>
@@ -161,25 +177,27 @@
                     <li>Samuel Jimenez – Desarrollo web</li>
                 </ul>
             </div>
-            
-            
-            <div >
+
+
+            <div>
                 <h3 class="footer-title">Contacto</h3>
                 <p class="footer-text">Tienes preguntas o quieres colaborar?</p>
                 <a href="contacto.html" class="footer-link">contacta con nosotros</a>
                 <div class="footer-descarga">
-                    
-                    <a href="https://avilcavill.itch.io/murdoch-beacon-of-shadows" class="footer-social-link">Itch.io</a>
+
+                    <a href="https://avilcavill.itch.io/murdoch-beacon-of-shadows"
+                        class="footer-social-link">Itch.io</a>
                 </div>
             </div>
-            
+
         </div>
-        
+
         <div class="footer-bottom">
-            ©  Murdoch Game. Todos los derechos reservados
+            © Murdoch Game. Todos los derechos reservados
         </div>
     </footer>
     <script src="JavaScript/ScrollButton.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </body>
+
 </html>
