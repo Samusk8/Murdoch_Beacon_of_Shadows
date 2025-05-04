@@ -100,6 +100,9 @@ form {
     border-radius: 20px;
     padding: 10px;
 }
+.user {
+    font: 1em sans-serif;
+}
 
 .nom3 h5 {
     color: var(--hover-color);
