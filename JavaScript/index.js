@@ -28,6 +28,8 @@ if (btnEnviarComentari) {
 mostrarComentaris();
 mostrarPuntuacions();
 mostrarPosts();
+setInterval(mostrarComentaris, 300000);
+setInterval(mostrarPuntuacions, 300000);
 
 async function descargarComentaris() {
     try {
@@ -50,6 +52,7 @@ async function descargarComentaris() {
 }
 
 async function mostrarComentaris() {
+    console.log("hola")
     await descargarComentaris();
     limpiarMostrarComentaris();
 
@@ -149,7 +152,7 @@ async function enviarFormularioContacto() {
     }
 
     } catch (error) {
-        console.error("Error de red:", error);
+        
         alert("Error de red al intentar enviar el mensaje.");
     }
 }
@@ -172,7 +175,7 @@ async function descargarPuntuacions() {
 
     } catch (err) {
         alert("Error al carregar base de dades");
-        console.error(err);
+       
     }
 }
 
@@ -214,7 +217,7 @@ async function descargarPosts() {
 
     } catch (err) {
         alert("Error al carregar base de dades");
-        console.error(err);
+        
     }
 }
 
@@ -227,7 +230,7 @@ async function mostrarPosts() {
 
     posts.forEach((post) => {
         PostInfoHTML += post.mostrarPost();
-        console.log(post)
+        
     });
 
     document.getElementById("post").innerHTML = PostInfoHTML;
