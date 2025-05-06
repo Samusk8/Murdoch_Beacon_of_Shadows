@@ -28,7 +28,7 @@ if (btnEnviarComentari) {
 mostrarComentaris();
 mostrarPuntuacions();
 mostrarPosts();
-setInterval(mostrarComentaris, 300000);
+
 setInterval(mostrarPuntuacions, 300000);
 
 async function descargarComentaris() {
@@ -160,14 +160,16 @@ async function enviarFormularioContacto() {
 
 
 async function descargarPuntuacions() {
+
     try {
+
         const respostaPuntuacions = await fetch('https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification/GHCki2tUqpMxPYBI6KnHEZD98ffEEeZMcts6J1QAh7FLDh3H7MpLcX4YQ7km');
 
         if (!respostaPuntuacions.ok) throw new Error("Error de xarxa");
 
         const data = await respostaPuntuacions.json();
         const puntuacions = data.data;
-
+        gestorPuntuacions.vaciarPuntuacio();
         puntuacions.forEach(({ name, puntuacion }) => {
             const puntuacio = new Classificacio(name, puntuacion);
             gestorPuntuacions.afegirPuntuacio(puntuacio);

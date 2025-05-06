@@ -15,4 +15,8 @@ export class storageClassificacio {
         this.puntuacions.push(newPuntuacio);
 
     }
+
+    vaciarPuntuacio(){
+        this.puntuacions = [];
+    }
 }
